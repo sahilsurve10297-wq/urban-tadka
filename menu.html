@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | The Urban Tadka - Authentic Indian Cuisine in Pune</title>
+  <meta name="description" content="Explore the authentic Indian dining menu of The Urban Tadka in Pune. Starters, Main Course, Dum Biryanis, Tandoori Breads, Desserts & Beverages. Order easily on WhatsApp.">
+
+  <!-- Tailwind CSS CDN & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FFF8F0',
+            dark: '#1C1917',
+            orange: {
+              DEFAULT: '#C2410C',
+              hover: '#9A3412',
+              light: '#FFEDD5'
+            },
+            gold: {
+              DEFAULT: '#D4A017',
+              light: '#FDE68A',
+              dark: '#B45309'
+            },
+            secondary: '#57534E'
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Poppins', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts & Custom CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#FFF8F0] text-[#1C1917] font-body selection:bg-[#C2410C] selection:text-white pb-20">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#1C1917] text-white text-xs sm:text-sm py-2 px-4 border-b border-[#D4A017]/20">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+        <span class="text-[#FFF8F0]/90">Dining & WhatsApp Ordering Open: <strong>11:00 AM – 11:00 PM</strong></span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="tel:+919876543210" class="flex items-center gap-1 text-[#D4A017] hover:underline">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>+91 98765 43210</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header id="main-navbar" class="sticky top-0 z-40 bg-[#FFF8F0]/90 backdrop-blur-md transition-all duration-300 border-b border-[#E7E5E4]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#C2410C] to-[#9A3412] flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+            <i data-lucide="flame" class="w-6 h-6 text-[#D4A017]"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading text-xl sm:text-2xl font-bold tracking-tight text-[#1C1917] leading-tight">
+              THE URBAN <span class="text-[#C2410C]">TADKA</span>
+            </span>
+            <span class="text-[10px] uppercase tracking-widest text-[#D4A017] font-semibold">
+              Authentic Flavours. Modern Experience.
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="nav-link relative text-sm font-medium transition-colors hover:text-[#C2410C] py-2">
+            Home
+            <span class="active-dot absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#C2410C] hidden"></span>
+          </a>
+          <a href="menu.html" class="nav-link relative text-sm font-medium transition-colors hover:text-[#C2410C] py-2">
+            Menu
+            <span class="active-dot absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#C2410C]"></span>
+          </a>
+          <a href="about.html" class="nav-link relative text-sm font-medium transition-colors hover:text-[#C2410C] py-2">
+            About
+            <span class="active-dot absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#C2410C] hidden"></span>
+          </a>
+          <a href="contact.html" class="nav-link relative text-sm font-medium transition-colors hover:text-[#C2410C] py-2">
+            Contact
+            <span class="active-dot absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#C2410C] hidden"></span>
+          </a>
+        </nav>
+
+        <!-- Navbar Action Buttons -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="contact.html" class="px-4 py-2.5 rounded-full text-xs font-semibold text-[#1C1917] border border-[#D4A017] hover:bg-[#D4A017]/10 transition-colors">
+            Book a Table
+          </a>
+          <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20place%20an%20order%20from%20The%20Urban%20Tadka." target="_blank" class="px-5 py-2.5 rounded-full text-xs font-semibold text-white bg-[#C2410C] hover:bg-[#9A3412] shadow-sm hover:shadow transition-all flex items-center gap-2">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            <span>Order on WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" type="button" class="md:hidden p-2 rounded-lg text-[#1C1917] hover:bg-[#E7E5E4] focus:outline-none" aria-label="Open Navigation Menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-[300px] bg-[#FFF8F0] z-50 p-6 flex flex-col justify-between shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out border-l border-[#D4A017]/30">
+    <div>
+      <div class="flex justify-between items-center mb-8 pb-4 border-b border-[#E7E5E4]">
+        <div class="flex items-center gap-2">
+          <i data-lucide="flame" class="w-6 h-6 text-[#C2410C]"></i>
+          <span class="font-heading font-bold text-lg text-[#1C1917]">THE URBAN TADKA</span>
+        </div>
+        <button id="close-drawer-btn" class="p-2 rounded-full hover:bg-[#E7E5E4] text-[#1C1917] focus:outline-none" aria-label="Close Navigation Menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-4">
+        <a href="index.html" class="flex items-center justify-between text-base font-medium text-[#1C1917] hover:text-[#C2410C] py-2 border-b border-[#E7E5E4]/50">
+          <span>Home</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-[#57534E]"></i>
+        </a>
+        <a href="menu.html" class="flex items-center justify-between text-base font-semibold text-[#C2410C] py-2 border-b border-[#E7E5E4]/50">
+          <span>Our Menu</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-[#C2410C]"></i>
+        </a>
+        <a href="about.html" class="flex items-center justify-between text-base font-medium text-[#1C1917] hover:text-[#C2410C] py-2 border-b border-[#E7E5E4]/50">
+          <span>About Restaurant</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-[#57534E]"></i>
+        </a>
+        <a href="contact.html" class="flex items-center justify-between text-base font-medium text-[#1C1917] hover:text-[#C2410C] py-2 border-b border-[#E7E5E4]/50">
+          <span>Contact & Location</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-[#57534E]"></i>
+        </a>
+      </nav>
+
+      <div class="mt-8 space-y-3">
+        <a href="contact.html" class="w-full py-3 rounded-xl text-center text-sm font-semibold text-[#1C1917] border border-[#D4A017] block hover:bg-[#D4A017]/10">
+          Reserve a Table
+        </a>
+        <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20place%20an%20order%20from%20The%20Urban%20Tadka." target="_blank" class="w-full py-3 rounded-xl text-center text-sm font-semibold text-white bg-[#C2410C] hover:bg-[#9A3412] block shadow flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Order on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Menu Hero Header -->
+    <section class="pt-12 pb-12 bg-jalis-subtle border-b border-[#E7E5E4] text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <span class="inline-block px-3 py-1 rounded-full badge-orange text-xs font-semibold uppercase tracking-wider mb-3">
+          Handcrafted Daily
+        </span>
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1C1917] tracking-tight">
+          OUR DINING <span class="text-gradient-orange">MENU</span>
+        </h1>
+        <div class="ornament-divider">
+          <i data-lucide="utensils" class="w-4 h-4 text-[#D4A017]"></i>
+        </div>
+        <p class="text-sm sm:text-base text-[#57534E] max-w-xl mx-auto">
+          Every dish is prepared fresh to order using slow-simmered gravies, authentic clay tandoor roasting, and our secret 14-spice blends.
+        </p>
+
+        <!-- Quick Info Badges -->
+        <div class="flex flex-wrap items-center justify-center gap-6 mt-6 text-xs text-[#57534E]">
+          <div class="flex items-center gap-1.5">
+            <span class="veg-indicator"></span>
+            <span>Pure Vegetarian Available</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="non-veg-indicator"></span>
+            <span>Halal & Fresh Meats</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="clock" class="w-3.5 h-3.5 text-[#D4A017]"></i>
+            <span>Avg. Prep Time: 20-25 mins</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Filtering & Search Control Bar -->
+    <section class="sticky top-20 z-30 bg-white/95 backdrop-blur-md shadow-sm border-b border-[#E7E5E4] py-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
+          
+          <!-- Category Tabs (Requested: Starters, Main Course, Biryani, Breads, Desserts, Drinks) -->
+          <div class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0 scrollbar-none">
+            <button class="menu-filter-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-[#C2410C] text-white shadow-sm transition-colors" data-category="all">
+              All Items
+            </button>
+            <button class="menu-filter-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-white text-[#1C1917] hover:bg-[#FFF8F0] border border-[#E7E5E4] transition-colors" data-category="starters">
+              Starters
+            </button>
+            <button class="menu-filter-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-white text-[#1C1917] hover:bg-[#FFF8F0] border border-[#E7E5E4] transition-colors" data-category="main-course">
+              Main Course
+            </button>
+            <button class="menu-filter-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-white text-[#1C1917] hover:bg-[#FFF8F0] border border-[#E7E5E4] transition-colors" data-category="biryani">
+              Biryani
+            </button>
+            <button class="menu-filter-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-white text-[#1C1917] hover:bg-[#FFF8F0] border border-[#E7E5E4] transition-colors" data-category="breads">
+              Breads
+            </button>
+            <button class="menu-filter-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-white text-[#1C1917] hover:bg-[#FFF8F0] border border-[#E7E5E4] transition-colors" data-category="desserts">
+              Desserts
+            </button>
+            <button class="menu-filter-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-white text-[#1C1917] hover:bg-[#FFF8F0] border border-[#E7E5E4] transition-colors" data-category="drinks">
+              Drinks
+            </button>
+          </div>
+
+          <!-- Search & Diet Filters -->
+          <div class="flex flex-wrap items-center gap-3 w-full lg:w-auto justify-between lg:justify-end">
+            
+            <!-- Live Search -->
+            <div class="relative flex-1 sm:w-64">
+              <i data-lucide="search" class="w-4 h-4 text-[#57534E] absolute left-3 top-1/2 -translate-y-1/2"></i>
+              <input 
+                id="menu-search-input" 
+                type="text" 
+                placeholder="Search dish or ingredient..." 
+                class="w-full pl-9 pr-4 py-2 rounded-full bg-[#FFF8F0] border border-[#E7E5E4] text-xs text-[#1C1917] placeholder-stone-400 focus:outline-none focus:border-[#C2410C]"
+              >
+            </div>
+
+            <!-- Veg Only Toggle -->
+            <label class="flex items-center gap-1.5 cursor-pointer text-xs font-semibold text-[#1C1917] bg-[#FFF8F0] px-3 py-2 rounded-full border border-[#E7E5E4]">
+              <input id="veg-only-filter" type="checkbox" class="w-3.5 h-3.5 rounded text-green-600 focus:ring-0">
+              <span class="veg-indicator !w-3.5 !h-3.5"></span>
+              <span>Veg Only</span>
+            </label>
+
+            <!-- Non-Veg Toggle -->
+            <label class="flex items-center gap-1.5 cursor-pointer text-xs font-semibold text-[#1C1917] bg-[#FFF8F0] px-3 py-2 rounded-full border border-[#E7E5E4]">
+              <input id="non-veg-filter" type="checkbox" class="w-3.5 h-3.5 rounded text-red-600 focus:ring-0">
+              <span class="non-veg-indicator !w-3.5 !h-3.5"></span>
+              <span>Non-Veg</span>
+            </label>
+
+          </div>
+
+        </div>
+
+        <div class="flex items-center justify-between text-xs text-[#57534E] mt-2 pt-2 border-t border-[#E7E5E4]/50">
+          <span id="menu-items-count">Showing all dishes</span>
+          <span class="text-[11px] text-[#C2410C]">Tip: Tap '+ Add' to tally your WhatsApp order bill!</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Main Dishes Grid -->
+    <section class="py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- STARTERS ----------------------------------------------------->
+          
+          <!-- Paneer Tikka (₹249) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="starters" data-is-veg="true" data-name="Paneer Tikka" data-desc="Fresh cottage cheese cubes char grilled in clay tandoor with bell peppers and mint chutney">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Paneer Tikka</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹249</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Fresh Malai paneer cubes marinated in hung curd, Kashmiri deghi mirch, and crushed fenugreek, charred over open charcoal embers.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-orange-50 text-[#C2410C] font-semibold">Tandoori Starter</span>
+                <span>• 6 Pcs</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Paneer Tikka" data-price="249">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Paneer Tikka" data-dish-price="249">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Chicken Tikka (₹289) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="starters" data-is-veg="false" data-name="Chicken Tikka" data-desc="Tender chicken thigh chunks marinated with spiced mustard oil yogurt and lemon juice">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="non-veg-indicator" title="Non-Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Chicken Tikka</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹289</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Succulent boneless chicken thighs steeped overnight in cold-pressed mustard oil, ginger-garlic paste, and tandoori spices.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800 font-semibold">House Specialty</span>
+                <span>• 6 Pcs</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Chicken Tikka" data-price="289">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Chicken Tikka" data-dish-price="289">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tandoori Malai Chaap (₹239) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="starters" data-is-veg="true" data-name="Tandoori Malai Chaap" data-desc="Tender soya chaap in rich cashew cream cardamom marinade">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Tandoori Malai Chaap</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹239</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Layered soya chaap marinated in rich cashew paste, cardamom cream, and black pepper, roasted to silky perfection.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-green-50 text-green-700 font-semibold">Vegetarian</span>
+                <span>• Mild & Creamy</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Tandoori Malai Chaap" data-price="239">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Tandoori Malai Chaap" data-dish-price="239">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mutton Seekh Kebab (₹349) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="starters" data-is-veg="false" data-name="Mutton Seekh Kebab" data-desc="Minced spiced lamb skewers with fresh coriander and garam masala">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="non-veg-indicator" title="Non-Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Mutton Seekh Kebab</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹349</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Finely minced tender lamb blended with mint, brown onions, and royal spices, skewered on seekhs and char-grilled.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-red-50 text-red-700 font-semibold">Chef's Special</span>
+                <span>• 4 Long Seekhs</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Mutton Seekh Kebab" data-price="349">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Mutton Seekh Kebab" data-dish-price="349">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hara Bhara Kebab (₹219) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="starters" data-is-veg="true" data-name="Hara Bhara Kebab" data-desc="Crispy spinach green peas and cottage cheese patties with chaat masala">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Hara Bhara Kebab</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹219</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Pan-crisped patties of blanched spinach, sweet green peas, and paneer, garnished with roasted cashews and chaat spices.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-green-50 text-green-700 font-semibold">Vegetarian</span>
+                <span>• 6 Pcs</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Hara Bhara Kebab" data-price="219">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Hara Bhara Kebab" data-dish-price="219">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- MAIN COURSE -------------------------------------------------->
+          
+          <!-- Butter Chicken (₹329) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="main-course" data-is-veg="false" data-name="Butter Chicken" data-desc="Tandoori chicken chunks simmered in slow cooked creamy tomato butter gravy">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="non-veg-indicator" title="Non-Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Butter Chicken</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹329</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Our crowning glory: smoked tandoori chicken simmered in silky slow-cooked makhani gravy enriched with fresh cream and butter.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-bold">Pune Bestseller ⭐</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Butter Chicken" data-price="329">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Butter Chicken" data-dish-price="329">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dal Tadka (₹189) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="main-course" data-is-veg="true" data-name="Dal Tadka" data-desc="Yellow lentils tempered with aromatic desi ghee cumin roasted garlic and whole red chilies">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Dal Tadka</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹189</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Creamy yellow lentils cooked to perfection, finished with a live sizzling tempering of golden desi ghee, garlic, and Kashmiri red chillies.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-900 font-semibold">The Urban Tadka Soul</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Dal Tadka" data-price="189">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Dal Tadka" data-dish-price="189">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dal Makhani (₹249) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="main-course" data-is-veg="true" data-name="Dal Makhani" data-desc="Slow simmered black urad lentils overnight with butter cream and tomatoes">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Dal Makhani</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹249</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Black urad lentils and kidney beans slow-simmered for 18 hours over low charcoal heat, infused with rich butter and cream.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-stone-100 text-stone-800 font-semibold">18-Hour Simmered</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Dal Makhani" data-price="249">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Dal Makhani" data-dish-price="249">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Paneer Butter Masala (₹269) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="main-course" data-is-veg="true" data-name="Paneer Butter Masala" data-desc="Soft cottage cheese cubes in spiced buttery tomato and onion gravy">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Paneer Butter Masala</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹269</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Silky cubes of fresh Malai cottage cheese simmered in a mildly spiced, rich gravy of fresh tomatoes, cashews, and aromatic kasuri methi.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-green-50 text-green-700 font-semibold">Vegetarian Favorite</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Paneer Butter Masala" data-price="269">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Paneer Butter Masala" data-dish-price="269">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Rogan Josh (₹389) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="main-course" data-is-veg="false" data-name="Rogan Josh" data-desc="Kashmiri lamb curry slow cooked with fennel seeds ginger and ratan jot">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="non-veg-indicator" title="Non-Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Rogan Josh</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹389</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Prime mutton pieces slow braised in Kashmiri shallots, dry ginger (saunth), crushed fennel, and deep crimson ratan jot bark.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-red-50 text-red-700 font-semibold">Royal Kashmiri Heritage</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Rogan Josh" data-price="389">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Rogan Josh" data-dish-price="389">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- BIRYANI ------------------------------------------------------>
+          
+          <!-- Veg Biryani (₹229) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="biryani" data-is-veg="true" data-name="Veg Biryani" data-desc="Slow dum cooked basmati rice with farm vegetables saffron mint and raita">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Veg Biryani</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹229</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Aged Daawat basmati rice infused with saffron milk, whole spices, garden vegetables, caramelized onions, served with cooling cucumber raita.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-purple-50 text-purple-800 font-semibold">Handi Dum Pukht</span>
+                <span>• Served with Raita</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Veg Biryani" data-price="229">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Veg Biryani" data-dish-price="229">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Chicken Dum Biryani (₹299) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="biryani" data-is-veg="false" data-name="Chicken Dum Biryani" data-desc="Kacchi dum hyderabadi chicken biryani with spiced basmati rice and boiled egg">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="non-veg-indicator" title="Non-Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Chicken Dum Biryani</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹299</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Marinated chicken pieces cooked together with extra long basmati rice in dough-sealed earthen handis. Served with mirchi ka salan and raita.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800 font-semibold">Hyderabadi Style</span>
+                <span>• Includes Salan</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Chicken Dum Biryani" data-price="299">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Chicken Dum Biryani" data-dish-price="299">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- BREADS -------------------------------------------------------->
+          
+          <!-- Garlic Naan (₹69) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="breads" data-is-veg="true" data-name="Garlic Naan" data-desc="Tandoori leavened bread slathered with melted butter and fresh minced roasted garlic">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Garlic Naan</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹69</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Crispy on the outside, pillow-soft inside, topped with crushed roasted garlic, melted butter, and fresh cilantro.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-stone-100 text-stone-800 font-semibold">Tandoor Clay Oven</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Garlic Naan" data-price="69">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Garlic Naan" data-dish-price="69">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Butter Naan (₹59) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="breads" data-is-veg="true" data-name="Butter Naan" data-desc="Classic leavened flatbread brushed with butter baked in clay tandoor">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Butter Naan</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹59</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Classic fermented flour flatbread baked on the fiery walls of our clay oven and brushed generously with pure butter.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-stone-100 text-stone-800 font-semibold">Classic Bread</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Butter Naan" data-price="59">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Butter Naan" data-dish-price="59">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Laccha Paratha (₹55) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="breads" data-is-veg="true" data-name="Laccha Paratha" data-desc="Flaky multi-layered whole wheat tandoori flatbread with desi ghee">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Laccha Paratha</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹55</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Flaky whole wheat bread folded in multiple concentric spiral layers with desi ghee and roasted in the tandoor until crisp.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-stone-100 text-stone-800 font-semibold">100% Whole Wheat</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Laccha Paratha" data-price="55">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Laccha Paratha" data-dish-price="55">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- DESSERTS ------------------------------------------------------>
+          
+          <!-- Shahi Gulab Jamun (₹129) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="desserts" data-is-veg="true" data-name="Shahi Gulab Jamun" data-desc="Warm golden khoya dumplings in saffron cardamom syrup with crushed pistachios">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Shahi Gulab Jamun</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹129</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Fresh mawa dumplings fried in pure ghee and soaked in warm rosewater, saffron, and green cardamom sugar syrup. (2 Large Pcs)
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800 font-semibold">Served Warm</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Shahi Gulab Jamun" data-price="129">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Shahi Gulab Jamun" data-dish-price="129">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Kesari Rasmalai (₹149) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="desserts" data-is-veg="true" data-name="Kesari Rasmalai" data-desc="Spongy cottage cheese discs in chilled saffron cardamom milk rabdi">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Kesari Rasmalai</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹149</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Delicate chenna patties poached in sweet syrup and steeped in thickened, saffron-infused cardamom milk with slivered almonds.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-yellow-50 text-yellow-800 font-semibold">Chilled Dessert</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Kesari Rasmalai" data-price="149">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Kesari Rasmalai" data-dish-price="149">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- DRINKS -------------------------------------------------------->
+          
+          <!-- Royal Mango Lassi (₹119) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="drinks" data-is-veg="true" data-name="Royal Mango Lassi" data-desc="Thick churned fresh yogurt with alphonso mango pulp and saffron">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Royal Mango Lassi</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹119</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Thick hand-churned fresh curd blended with pure Ratnagiri Alphonso mango pulp, Kashmiri saffron threads, and crushed pistachios.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-orange-100 text-[#C2410C] font-semibold">Customer Favorite</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Royal Mango Lassi" data-price="119">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Royal Mango Lassi" data-dish-price="119">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Masala Chaas (₹69) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between" data-category="drinks" data-is-veg="true" data-name="Masala Chaas" data-desc="Spiced churned buttermilk with roasted cumin ginger green chili and mint">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="veg-indicator" title="Vegetarian"></span>
+                  <h3 class="font-heading text-base font-bold text-[#1C1917]">Masala Chaas</h3>
+                </div>
+                <span class="text-sm font-bold text-[#C2410C]">₹69</span>
+              </div>
+              <p class="text-xs text-[#57534E] leading-relaxed mb-3">
+                Refreshing light buttermilk infused with hand-roasted cumin powder, black salt (kala namak), fresh ginger, and garden mint.
+              </p>
+              <div class="flex items-center gap-2 text-[10px] text-[#57534E] mb-4">
+                <span class="px-2 py-0.5 rounded bg-green-50 text-green-700 font-semibold">Digestive & Cooling</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-[#E7E5E4] flex items-center gap-2">
+              <button class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1" data-name="Masala Chaas" data-price="69">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+              <button class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5" data-dish-name="Masala Chaas" data-dish-price="69">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Empty Filter State -->
+        <div id="menu-empty-state" class="hidden text-center py-16">
+          <i data-lucide="search-x" class="w-12 h-12 text-[#57534E] mx-auto mb-3"></i>
+          <h3 class="font-heading text-xl font-bold text-[#1C1917]">No Dishes Found</h3>
+          <p class="text-xs sm:text-sm text-[#57534E] mt-1">Try clearing your search query or dietary filters.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Chef Custom Request Banner -->
+    <section class="py-12 bg-white border-t border-[#E7E5E4]">
+      <div class="max-w-4xl mx-auto px-4 text-center space-y-4">
+        <h3 class="font-heading text-2xl font-bold text-[#1C1917]">Have Specific Dietary or Spice Preferences?</h3>
+        <p class="text-xs sm:text-sm text-[#57534E] leading-relaxed max-w-xl mx-auto">
+          We gladly customize spice levels (Mild, Medium, Spicy, or Desi Teekha) and cater to Jain, Gluten-free, and Vegan preferences upon request.
+        </p>
+        <div class="pt-2">
+          <a href="https://wa.me/919876543210?text=Hi%2C%20I%20have%20a%20dietary%20preference%20inquiry%20for%20The%20Urban%20Tadka." target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold text-white bg-[#C2410C] hover:bg-[#9A3412] shadow transition-colors">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Chat Directly with Head Chef on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FLOATING WHATSAPP ORDER DRAWER / TALLY CART -->
+  <div id="whatsapp-order-drawer" class="fixed bottom-0 left-0 right-0 z-40 bg-[#1C1917] text-white p-4 shadow-2xl border-t-2 border-[#D4A017] transform translate-y-full opacity-0 pointer-events-none transition-all duration-300">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-[#C2410C] flex items-center justify-center text-white font-bold">
+          <span id="order-total-count">0</span>
+        </div>
+        <div>
+          <p class="text-xs text-stone-400">Your Selected Order</p>
+          <p class="font-heading text-lg font-bold text-white">
+            Subtotal: <span id="order-subtotal-val" class="text-[#D4A017]">₹0</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3 w-full sm:w-auto">
+        <button id="order-clear-btn" class="px-4 py-2.5 rounded-lg text-xs font-semibold text-stone-400 hover:text-white border border-stone-700 hover:border-stone-500">
+          Clear
+        </button>
+        <button id="order-checkout-whatsapp" class="flex-1 sm:flex-none px-6 py-2.5 rounded-lg bg-[#25D366] hover:bg-green-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-105">
+          <i data-lucide="message-circle" class="w-4 h-4 fill-white text-[#25D366]"></i>
+          <span>Send Order on WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON (Visible on every page) -->
+  <a 
+    id="floating-whatsapp-btn"
+    href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20menu." 
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform whatsapp-pulse focus:outline-none"
+    aria-label="Chat on WhatsApp"
+  >
+    <i data-lucide="message-circle" class="w-8 h-8 fill-white text-[#25D366]"></i>
+    <span class="sr-only">Order or enquire on WhatsApp</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-[#1C1917] text-[#E7E5E4] pt-12 pb-8 border-t border-[#D4A017]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-400">
+        <p>© 2026 The Urban Tadka. Pune, Maharashtra. All Rights Reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="index.html" class="hover:text-white">Home</a>
+          <a href="about.html" class="hover:text-white">About</a>
+          <a href="contact.html" class="hover:text-white">Contact & Location</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

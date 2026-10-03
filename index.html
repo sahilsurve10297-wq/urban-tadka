@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Urban Tadka | Authentic Indian Restaurant in Pune</title>
+  <meta name="description" content="Experience authentic Indian cuisine at The Urban Tadka in Pune. Freshly prepared tandoori delicacies, rich curries, aromatic biryanis, and warm hospitality. Dine-in, takeaway, and WhatsApp ordering.">
+  <meta name="keywords" content="The Urban Tadka, Indian restaurant Pune, Butter Chicken, Paneer Tikka, Biryani Pune, Koregaon Park dining, tandoor, authentic Indian food">
+
+  <!-- Open Graph & Social Meta -->
+  <meta property="og:title" content="The Urban Tadka | Authentic Indian Restaurant in Pune">
+  <meta property="og:description" content="Freshly prepared Indian dishes made with authentic spices, quality ingredients, and a whole lot of love.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Tailwind CSS CDN & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FFF8F0',
+            dark: '#1C1917',
+            orange: {
+              DEFAULT: '#C2410C',
+              hover: '#9A3412',
+              light: '#FFEDD5'
+            },
+            gold: {
+              DEFAULT: '#D4A017',
+              light: '#FDE68A',
+              dark: '#B45309'
+            },
+            secondary: '#57534E'
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Poppins', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts & Custom CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org JSON-LD Structured Data for Restaurant SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Urban Tadka",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+919876543210",
+    "url": "https://theurbantadka.demo",
+    "priceRange": "₹₹",
+    "servesCuisine": ["North Indian", "Mughlai", "Biryani", "Tandoori"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Lane 7, Koregaon Park",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "18.5362",
+      "longitude": "73.8940"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "23:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#FFF8F0] text-[#1C1917] font-body selection:bg-[#C2410C] selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#1C1917] text-white text-xs sm:text-sm py-2 px-4 border-b border-[#D4A017]/20">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+        <span class="text-[#FFF8F0]/90">We are Open Today: <strong>11:00 AM – 11:00 PM</strong> in Pune</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="tel:+919876543210" class="flex items-center gap-1 text-[#D4A017] hover:underline">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>+91 98765 43210</span>
+        </a>
+        <span class="text-[#57534E]">|</span>
+        <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20menu." target="_blank" class="flex items-center gap-1 text-green-400 hover:underline">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          <span>Order on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: Sticky Responsive Navbar -->
+  <header id="main-navbar" class="sticky top-0 z-40 bg-[#FFF8F0]/90 backdrop-blur-md transition-all duration-300 border-b border-[#E7E5E4]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-3 group focus:outline-none" aria-label="The Urban Tadka Home">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#C2410C] to-[#9A3412] flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+            <i data-lucide="flame" class="w-6 h-6 text-[#D4A017]"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading text-xl sm:text-2xl font-bold tracking-tight text-[#1C1917] leading-tight">
+              THE URBAN <span class="text-[#C2410C]">TADKA</span>
+            </span>
+            <span class="text-[10px] uppercase tracking-widest text-[#D4A017] font-semibold">
+              Authentic Flavours. Modern Experience.
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="nav-link relative text-sm font-medium transition-colors hover:text-[#C2410C] py-2">
+            Home
+            <span class="active-dot absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#C2410C] hidden"></span>
+          </a>
+          <a href="menu.html" class="nav-link relative text-sm font-medium transition-colors hover:text-[#C2410C] py-2">
+            Menu
+            <span class="active-dot absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#C2410C] hidden"></span>
+          </a>
+          <a href="about.html" class="nav-link relative text-sm font-medium transition-colors hover:text-[#C2410C] py-2">
+            About
+            <span class="active-dot absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#C2410C] hidden"></span>
+          </a>
+          <a href="contact.html" class="nav-link relative text-sm font-medium transition-colors hover:text-[#C2410C] py-2">
+            Contact
+            <span class="active-dot absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#C2410C] hidden"></span>
+          </a>
+        </nav>
+
+        <!-- Navbar Action Buttons -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="contact.html" class="px-4 py-2.5 rounded-full text-xs font-semibold text-[#1C1917] border border-[#D4A017] hover:bg-[#D4A017]/10 transition-colors">
+            Book a Table
+          </a>
+          <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20place%20an%20order%20from%20The%20Urban%20Tadka." target="_blank" class="px-5 py-2.5 rounded-full text-xs font-semibold text-white bg-[#C2410C] hover:bg-[#9A3412] shadow-sm hover:shadow transition-all flex items-center gap-2">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            <span>Order on WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" type="button" class="md:hidden p-2 rounded-lg text-[#1C1917] hover:bg-[#E7E5E4] focus:outline-none" aria-label="Open Navigation Menu" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Menu -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-[300px] bg-[#FFF8F0] z-50 p-6 flex flex-col justify-between shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out border-l border-[#D4A017]/30">
+    <div>
+      <div class="flex justify-between items-center mb-8 pb-4 border-b border-[#E7E5E4]">
+        <div class="flex items-center gap-2">
+          <i data-lucide="flame" class="w-6 h-6 text-[#C2410C]"></i>
+          <span class="font-heading font-bold text-lg text-[#1C1917]">THE URBAN TADKA</span>
+        </div>
+        <button id="close-drawer-btn" class="p-2 rounded-full hover:bg-[#E7E5E4] text-[#1C1917] focus:outline-none" aria-label="Close Navigation Menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-4">
+        <a href="index.html" class="flex items-center justify-between text-base font-medium text-[#1C1917] hover:text-[#C2410C] py-2 border-b border-[#E7E5E4]/50">
+          <span>Home</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-[#57534E]"></i>
+        </a>
+        <a href="menu.html" class="flex items-center justify-between text-base font-medium text-[#1C1917] hover:text-[#C2410C] py-2 border-b border-[#E7E5E4]/50">
+          <span>Our Menu</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-[#57534E]"></i>
+        </a>
+        <a href="about.html" class="flex items-center justify-between text-base font-medium text-[#1C1917] hover:text-[#C2410C] py-2 border-b border-[#E7E5E4]/50">
+          <span>About Restaurant</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-[#57534E]"></i>
+        </a>
+        <a href="contact.html" class="flex items-center justify-between text-base font-medium text-[#1C1917] hover:text-[#C2410C] py-2 border-b border-[#E7E5E4]/50">
+          <span>Contact & Location</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-[#57534E]"></i>
+        </a>
+      </nav>
+
+      <div class="mt-8 space-y-3">
+        <a href="contact.html" class="w-full py-3 rounded-xl text-center text-sm font-semibold text-[#1C1917] border border-[#D4A017] block hover:bg-[#D4A017]/10">
+          Reserve a Table
+        </a>
+        <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20place%20an%20order%20from%20The%20Urban%20Tadka." target="_blank" class="w-full py-3 rounded-xl text-center text-sm font-semibold text-white bg-[#C2410C] hover:bg-[#9A3412] block shadow flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Order on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="pt-6 border-t border-[#E7E5E4] text-xs text-[#57534E] space-y-2">
+      <p class="flex items-center gap-2">
+        <i data-lucide="map-pin" class="w-4 h-4 text-[#C2410C]"></i>
+        <span>Koregaon Park, Pune</span>
+      </p>
+      <p class="flex items-center gap-2">
+        <i data-lucide="clock" class="w-4 h-4 text-[#D4A017]"></i>
+        <span>Open: 11:00 AM – 11:00 PM</span>
+      </p>
+    </div>
+  </aside>
+
+  <main>
+    <!-- SECTION 2: Hero Section -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24 bg-jalis-subtle">
+      <!-- Decorative Glow Accents -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-[#D4A017]/10 to-[#C2410C]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Text Content -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Quality Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-orange text-xs font-semibold">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#C2410C]"></i>
+              <span>Pune's Premier Modern Indian Dining</span>
+            </div>
+
+            <!-- Main Heading (Playfair Display) -->
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1C1917] tracking-tight leading-[1.15]">
+              AUTHENTIC FLAVOURS. <br class="hidden sm:inline">
+              <span class="text-gradient-orange">MODERN EXPERIENCE.</span>
+            </h1>
+
+            <!-- Description (Poppins) -->
+            <p class="text-base sm:text-lg text-[#57534E] max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Freshly prepared Indian dishes made with authentic spices, quality ingredients, and a whole lot of love.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="menu.html" class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold text-white bg-[#C2410C] hover:bg-[#9A3412] shadow-lg shadow-[#C2410C]/25 hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                <span>View Menu</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20menu." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold text-[#1C1917] bg-white border-2 border-[#D4A017] hover:bg-[#D4A017]/10 shadow-sm transition-all flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="w-5 h-5 text-green-600"></i>
+                <span>Order on WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Social Proof / Trust Indicators -->
+            <div class="pt-6 border-t border-[#E7E5E4] flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-10 text-xs sm:text-sm text-[#57534E]">
+              <div class="flex items-center gap-2">
+                <div class="flex text-amber-500">
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                </div>
+                <span class="font-medium text-[#1C1917]">4.9 / 5</span>
+                <span>(1,200+ Pune Foodies)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-4 h-4 text-[#C2410C]"></i>
+                <span class="font-medium text-[#1C1917]">FSSAI Certified Kitchen</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-4 h-4 text-[#D4A017]"></i>
+                <span>11 AM – 11 PM</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Restaurant Photography & Badges -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Decorative Backdrop Frame -->
+              <div class="absolute -inset-3 rounded-3xl bg-gradient-to-tr from-[#D4A017]/30 to-[#C2410C]/30 blur-lg transform rotate-2"></div>
+              
+              <!-- Main Hero Image Card -->
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-dark">
+                <img 
+                  src="images/hero.jpg" 
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1000&q=80';"
+                  alt="Royal Indian Feast spread with butter chicken, paneer tikka, and naan at The Urban Tadka Pune" 
+                  class="w-full h-[380px] sm:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
+                  loading="eager"
+                  fetchpriority="high"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+                
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-xs uppercase tracking-widest text-[#D4A017] font-semibold">Chef's Signature Feast</span>
+                      <p class="font-heading text-lg font-bold">Royal Tandoori & Curry Spread</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-[#C2410C] text-xs font-bold text-white shadow">
+                      Fresh Daily
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Rating Pill -->
+              <div class="absolute -bottom-6 -left-4 sm:-left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-[#E7E5E4] flex items-center gap-3 animate-float">
+                <div class="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center text-[#C2410C]">
+                  <i data-lucide="award" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-[#1C1917]">Pune's Top Choice</p>
+                  <p class="text-[11px] text-[#57534E]">100% Authentic Spices</p>
+                </div>
+              </div>
+
+              <!-- Floating Fast Delivery / Takeaway Pill -->
+              <div class="absolute -top-4 -right-4 sm:-right-6 bg-white p-3 rounded-2xl shadow-xl border border-[#E7E5E4] flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl bg-green-100 flex items-center justify-center text-green-700">
+                  <i data-lucide="bike" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-[#1C1917]">Dine-In & Delivery</p>
+                  <p class="text-[11px] text-[#57534E]">Within 30-40 Mins</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Featured Dishes -->
+    <section class="py-16 sm:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="inline-block px-3 py-1 rounded-full badge-gold text-xs font-semibold uppercase tracking-wider mb-2">
+            Handcrafted Specialties
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917]">
+            Featured Dishes
+          </h2>
+          <div class="ornament-divider">
+            <i data-lucide="utensils" class="w-4 h-4 text-[#D4A017]"></i>
+          </div>
+          <p class="text-[#57534E] text-sm sm:text-base">
+            Curated by our master chefs, these culinary masterpieces embody the rich culinary traditions of India with a modern gourmet touch.
+          </p>
+        </div>
+
+        <!-- Dishes Grid (4 items required) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          
+          <!-- Dish 1: Paneer Tikka - ₹249 -->
+          <article class="bg-[#FFF8F0] rounded-2xl overflow-hidden border border-[#E7E5E4] card-hover flex flex-col justify-between">
+            <div class="relative overflow-hidden h-48 bg-stone-200">
+              <img 
+                src="images/dish-1.jpg" 
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=600&q=80';"
+                alt="Paneer Tikka char-grilled with capsicum and mint chutney" 
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3">
+                <span class="veg-indicator" title="Vegetarian" aria-label="Vegetarian"></span>
+              </div>
+              <div class="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-full text-xs font-bold text-[#C2410C] shadow">
+                ₹249
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-1.5">
+                  <h3 class="font-heading text-lg font-bold text-[#1C1917]">Paneer Tikka</h3>
+                  <div class="spice-chili text-red-500" title="Medium Spiced">
+                    <i data-lucide="flame" class="w-3.5 h-3.5 fill-red-500"></i>
+                    <i data-lucide="flame" class="w-3.5 h-3.5 fill-red-500"></i>
+                  </div>
+                </div>
+                <p class="text-xs text-[#57534E] leading-relaxed mb-4">
+                  Fresh cottage cheese cubes marinated in yogurt and degi mirch, skewered with bell peppers and roasted in our clay tandoor.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-[#E7E5E4]/80 flex items-center justify-between gap-2">
+                <button 
+                  class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] text-[#1C1917] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1"
+                  data-name="Paneer Tikka"
+                  data-price="249"
+                >
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                  <span>Add</span>
+                </button>
+                <button 
+                  class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5"
+                  data-dish-name="Paneer Tikka"
+                  data-dish-price="249"
+                >
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                  <span>Order</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 2: Butter Chicken - ₹329 -->
+          <article class="bg-[#FFF8F0] rounded-2xl overflow-hidden border border-[#E7E5E4] card-hover flex flex-col justify-between">
+            <div class="relative overflow-hidden h-48 bg-stone-200">
+              <img 
+                src="images/dish-2.jpg" 
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80';"
+                alt="Butter Chicken in rich velvety tomato gravy with cream swirl" 
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3">
+                <span class="non-veg-indicator" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span>
+              </div>
+              <div class="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-full text-xs font-bold text-[#C2410C] shadow">
+                ₹329
+              </div>
+              <div class="absolute bottom-3 left-3 bg-[#D4A017] text-[#1C1917] text-[10px] font-bold px-2 py-0.5 rounded shadow">
+                Bestseller
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-1.5">
+                  <h3 class="font-heading text-lg font-bold text-[#1C1917]">Butter Chicken</h3>
+                  <div class="spice-chili text-red-500" title="Mild Creamy">
+                    <i data-lucide="flame" class="w-3.5 h-3.5 fill-red-500"></i>
+                  </div>
+                </div>
+                <p class="text-xs text-[#57534E] leading-relaxed mb-4">
+                  Tender tandoor-grilled chicken simmered in our signature slow-cooked tomato, butter, and cashew makhani gravy with fenugreek.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-[#E7E5E4]/80 flex items-center justify-between gap-2">
+                <button 
+                  class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] text-[#1C1917] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1"
+                  data-name="Butter Chicken"
+                  data-price="329"
+                >
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                  <span>Add</span>
+                </button>
+                <button 
+                  class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5"
+                  data-dish-name="Butter Chicken"
+                  data-dish-price="329"
+                >
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                  <span>Order</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 3: Veg Biryani - ₹229 -->
+          <article class="bg-[#FFF8F0] rounded-2xl overflow-hidden border border-[#E7E5E4] card-hover flex flex-col justify-between">
+            <div class="relative overflow-hidden h-48 bg-stone-200">
+              <img 
+                src="images/dish-3.jpg" 
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80';"
+                alt="Hyderabadi Dum Veg Biryani with saffron basmati rice and raita" 
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3">
+                <span class="veg-indicator" title="Vegetarian" aria-label="Vegetarian"></span>
+              </div>
+              <div class="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-full text-xs font-bold text-[#C2410C] shadow">
+                ₹229
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-1.5">
+                  <h3 class="font-heading text-lg font-bold text-[#1C1917]">Veg Biryani</h3>
+                  <div class="spice-chili text-red-500" title="Aromatic Spiced">
+                    <i data-lucide="flame" class="w-3.5 h-3.5 fill-red-500"></i>
+                    <i data-lucide="flame" class="w-3.5 h-3.5 fill-red-500"></i>
+                  </div>
+                </div>
+                <p class="text-xs text-[#57534E] leading-relaxed mb-4">
+                  Long-grain fragrant basmati rice layered with garden vegetables, saffron milk, fried onions (birista) and slow-cooked in a sealed handi.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-[#E7E5E4]/80 flex items-center justify-between gap-2">
+                <button 
+                  class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] text-[#1C1917] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1"
+                  data-name="Veg Biryani"
+                  data-price="229"
+                >
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                  <span>Add</span>
+                </button>
+                <button 
+                  class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5"
+                  data-dish-name="Veg Biryani"
+                  data-dish-price="229"
+                >
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                  <span>Order</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 4: Masala Dosa - ₹149 -->
+          <article class="bg-[#FFF8F0] rounded-2xl overflow-hidden border border-[#E7E5E4] card-hover flex flex-col justify-between">
+            <div class="relative overflow-hidden h-48 bg-stone-200">
+              <img 
+                src="images/gallery/gallery-1.jpg" 
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=600&q=80';"
+                alt="Golden crispy Masala Dosa served with coconut chutney and piping hot sambar" 
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3">
+                <span class="veg-indicator" title="Vegetarian" aria-label="Vegetarian"></span>
+              </div>
+              <div class="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-full text-xs font-bold text-[#C2410C] shadow">
+                ₹149
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-1.5">
+                  <h3 class="font-heading text-lg font-bold text-[#1C1917]">Masala Dosa</h3>
+                  <div class="spice-chili text-red-500" title="Mild">
+                    <i data-lucide="flame" class="w-3.5 h-3.5 fill-red-500"></i>
+                  </div>
+                </div>
+                <p class="text-xs text-[#57534E] leading-relaxed mb-4">
+                  Crispy fermented golden rice crepe filled with spiced mustard potato masala, accompanied by fresh coconut chutney and lentil sambar.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-[#E7E5E4]/80 flex items-center justify-between gap-2">
+                <button 
+                  class="add-to-order-btn text-xs font-semibold px-3 py-2 rounded-lg border border-[#D4A017] text-[#1C1917] hover:bg-[#D4A017]/15 transition-colors flex items-center gap-1"
+                  data-name="Masala Dosa"
+                  data-price="149"
+                >
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                  <span>Add</span>
+                </button>
+                <button 
+                  class="flex-1 text-xs font-semibold py-2 px-3 rounded-lg bg-[#C2410C] hover:bg-[#9A3412] text-white transition-colors flex items-center justify-center gap-1.5"
+                  data-dish-name="Masala Dosa"
+                  data-dish-price="149"
+                >
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                  <span>Order</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Section Bottom Link -->
+        <div class="text-center mt-12">
+          <a href="menu.html" class="inline-flex items-center gap-2 text-sm font-semibold text-[#C2410C] hover:text-[#9A3412] group">
+            <span>Explore our complete 40+ item dining menu</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: Why Choose Us -->
+    <section class="py-16 sm:py-20 bg-[#FFF8F0] border-y border-[#E7E5E4]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="inline-block px-3 py-1 rounded-full badge-orange text-xs font-semibold uppercase tracking-wider mb-2">
+            The Urban Tadka Promise
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917]">
+            Why Choose Us
+          </h2>
+          <div class="ornament-divider">
+            <i data-lucide="award" class="w-4 h-4 text-[#D4A017]"></i>
+          </div>
+          <p class="text-[#57534E] text-sm sm:text-base">
+            We preserve traditional Indian culinary heritage while adhering to international hygiene and hospitality standards.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Pillar 1: Fresh Ingredients -->
+          <div class="bg-white p-8 rounded-2xl border border-[#E7E5E4] card-hover text-center space-y-4">
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-[#FFF8F0] border border-[#D4A017]/40 flex items-center justify-center text-[#C2410C]">
+              <i data-lucide="leaf" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-[#1C1917]">Fresh Ingredients</h3>
+            <p class="text-xs sm:text-sm text-[#57534E] leading-relaxed">
+              We source daily fresh dairy, farm-crisp produce, and unadulterated cold-pressed oils. No shortcuts, ever.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Authentic Recipes -->
+          <div class="bg-white p-8 rounded-2xl border border-[#E7E5E4] card-hover text-center space-y-4">
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-[#FFF8F0] border border-[#D4A017]/40 flex items-center justify-center text-[#D4A017]">
+              <i data-lucide="book-open" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-[#1C1917]">Authentic Recipes</h3>
+            <p class="text-xs sm:text-sm text-[#57534E] leading-relaxed">
+              Heritage Mughlai and regional Indian cooking formulas passed down through generations of royal khansamas.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Freshly Prepared -->
+          <div class="bg-white p-8 rounded-2xl border border-[#E7E5E4] card-hover text-center space-y-4">
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-[#FFF8F0] border border-[#D4A017]/40 flex items-center justify-center text-[#C2410C]">
+              <i data-lucide="flame" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-[#1C1917]">Freshly Prepared</h3>
+            <p class="text-xs sm:text-sm text-[#57534E] leading-relaxed">
+              Zero frozen bases or artificial coloring. Every curry is simmered to order and every naan is baked fresh in clay tandoors.
+            </p>
+          </div>
+
+          <!-- Pillar 4: Made With Love -->
+          <div class="bg-white p-8 rounded-2xl border border-[#E7E5E4] card-hover text-center space-y-4">
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-[#FFF8F0] border border-[#D4A017]/40 flex items-center justify-center text-[#D4A017]">
+              <i data-lucide="heart" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-[#1C1917]">Made With Love</h3>
+            <p class="text-xs sm:text-sm text-[#57534E] leading-relaxed">
+              Inspired by the sacred ethos of <em>'Atithi Devo Bhava'</em> (Guest is God), we welcome you like family at our tables.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: About Restaurant (Two-Column Story) -->
+    <section class="py-16 sm:py-24 bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Column 1: Restaurant Story & Chef Note -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-gold text-xs font-semibold uppercase tracking-wider">
+              <span>Our Culinary Heritage</span>
+            </div>
+
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1C1917] leading-tight">
+              A TASTE WORTH <br>
+              <span class="text-gradient-orange">COMING BACK FOR</span>
+            </h2>
+
+            <div class="space-y-4 text-sm sm:text-base text-[#57534E] leading-relaxed">
+              <p>
+                Founded in the vibrant heart of Pune, <strong>The Urban Tadka</strong> was born from a singular passion: to elevate authentic Indian soul food into a world-class dining celebration without compromising on roots.
+              </p>
+              <p>
+                In Indian culinary lore, the <em>"Tadka"</em> (tempering) is the defining soul of every dish — that precise magical moment when whole mustard seeds, cumin, roasted garlic, and fiery Kashmiri chilies sizzle in pure desi ghee, unlocking an explosion of fragrance.
+              </p>
+              <p>
+                From our succulent char-grilled kebabs to velvety handi curries and aromatic dum biryanis, every single preparation is balanced to tantalize your palate.
+              </p>
+            </div>
+
+            <!-- Highlights / Stats -->
+            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-[#E7E5E4]">
+              <div>
+                <p class="font-heading text-2xl sm:text-3xl font-bold text-[#C2410C]">12+</p>
+                <p class="text-xs text-[#57534E]">Years of Mastery</p>
+              </div>
+              <div>
+                <p class="font-heading text-2xl sm:text-3xl font-bold text-[#D4A017]">45+</p>
+                <p class="text-xs text-[#57534E]">Secret Spice Mixes</p>
+              </div>
+              <div>
+                <p class="font-heading text-2xl sm:text-3xl font-bold text-[#1C1917]">50,000+</p>
+                <p class="text-xs text-[#57534E]">Delighted Guests</p>
+              </div>
+            </div>
+
+            <!-- Action Link -->
+            <div class="pt-2">
+              <a href="about.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#1C1917] text-white text-xs sm:text-sm font-semibold hover:bg-[#C2410C] transition-colors">
+                <span>Read Our Full Story</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Column 2: Interior & Ambiance Photography Collage -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative">
+              
+              <!-- Main Interior Frame -->
+              <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-[#FFF8F0]">
+                <img 
+                  src="images/interior.jpg" 
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80';"
+                  alt="Warm, luxury interior of The Urban Tadka restaurant in Pune with ambient lighting" 
+                  class="w-full h-[400px] sm:h-[460px] object-cover"
+                  loading="lazy"
+                >
+              </div>
+
+              <!-- Overlaid Chef Quote Card -->
+              <div class="absolute -bottom-6 -right-2 sm:-right-6 bg-white p-5 sm:p-6 rounded-2xl shadow-2xl border border-[#E7E5E4] max-w-xs">
+                <i data-lucide="quote" class="w-8 h-8 text-[#D4A017] mb-2 opacity-50"></i>
+                <p class="text-xs text-[#1C1917] italic font-medium mb-3">
+                  "Food is not just sustenance; it is a sacred gesture of love that brings people together."
+                </p>
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-[#C2410C] text-white flex items-center justify-center font-bold text-xs">
+                    VR
+                  </div>
+                  <div>
+                    <p class="text-xs font-bold text-[#1C1917]">Chef Vikram Rawat</p>
+                    <p class="text-[10px] text-[#57534E]">Executive Chef & Co-founder</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Menu Preview -->
+    <section id="menu-preview" class="py-16 sm:py-20 bg-[#FFF8F0]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="inline-block px-3 py-1 rounded-full badge-orange text-xs font-semibold uppercase tracking-wider mb-2">
+            Taste The Tradition
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917]">
+            Menu Preview
+          </h2>
+          <div class="ornament-divider">
+            <i data-lucide="book" class="w-4 h-4 text-[#D4A017]"></i>
+          </div>
+          <p class="text-[#57534E] text-sm sm:text-base">
+            Featuring our most beloved delicacies across classic categories.
+          </p>
+        </div>
+
+        <!-- Category Pills (Requested Categories: Starters, Main Course, Biryani, Breads, Desserts, Drinks) -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+          <button class="menu-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-[#C2410C] text-white shadow-md" data-category="all">
+            All Items
+          </button>
+          <button class="menu-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-[#1C1917] hover:bg-orange-50 border border-[#E7E5E4]" data-category="starters">
+            Starters
+          </button>
+          <button class="menu-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-[#1C1917] hover:bg-orange-50 border border-[#E7E5E4]" data-category="main-course">
+            Main Course
+          </button>
+          <button class="menu-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-[#1C1917] hover:bg-orange-50 border border-[#E7E5E4]" data-category="biryani">
+            Biryani
+          </button>
+          <button class="menu-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-[#1C1917] hover:bg-orange-50 border border-[#E7E5E4]" data-category="breads">
+            Breads
+          </button>
+          <button class="menu-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-[#1C1917] hover:bg-orange-50 border border-[#E7E5E4]" data-category="desserts">
+            Desserts
+          </button>
+          <button class="menu-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-[#1C1917] hover:bg-orange-50 border border-[#E7E5E4]" data-category="drinks">
+            Drinks
+          </button>
+        </div>
+
+        <!-- Menu Preview List (Requested items: Chicken Tikka ₹289, Paneer Tikka ₹249, Dal Tadka ₹189, Butter Chicken ₹329, Veg Biryani ₹229, Garlic Naan ₹69) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          
+          <!-- Item 1: Chicken Tikka - ₹289 (Starters) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex gap-4 items-center justify-between" data-category="starters" data-is-veg="false" data-name="Chicken Tikka" data-desc="Succulent boneless chicken chunks marinated in spiced mustard oil yogurt marinade">
+            <div class="flex items-center gap-3">
+              <span class="non-veg-indicator" title="Non-Vegetarian"></span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-heading text-base font-bold text-[#1C1917]">Chicken Tikka</h4>
+                  <span class="text-[10px] px-2 py-0.5 rounded bg-orange-100 text-[#C2410C] font-semibold">Tandoor</span>
+                </div>
+                <p class="text-xs text-[#57534E] line-clamp-1 mt-0.5">Tender chicken chunks marinated in mustard oil, roasted cumin, and Kashmiri chilies.</p>
+                <p class="text-xs font-bold text-[#C2410C] mt-1.5">₹289</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0">
+              <button class="add-to-order-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15" data-name="Chicken Tikka" data-price="289">
+                + Add
+              </button>
+              <button class="p-2 rounded-lg bg-[#C2410C] text-white hover:bg-[#9A3412]" data-dish-name="Chicken Tikka" data-dish-price="289" title="Order on WhatsApp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 2: Paneer Tikka - ₹249 (Starters) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex gap-4 items-center justify-between" data-category="starters" data-is-veg="true" data-name="Paneer Tikka" data-desc="Fresh cottage cheese cubes char grilled in clay tandoor with bell peppers">
+            <div class="flex items-center gap-3">
+              <span class="veg-indicator" title="Vegetarian"></span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-heading text-base font-bold text-[#1C1917]">Paneer Tikka</h4>
+                  <span class="text-[10px] px-2 py-0.5 rounded bg-green-100 text-green-700 font-semibold">Popular</span>
+                </div>
+                <p class="text-xs text-[#57534E] line-clamp-1 mt-0.5">Farm paneer marinated in aromatic herbs, skewered and roasted over embers.</p>
+                <p class="text-xs font-bold text-[#C2410C] mt-1.5">₹249</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0">
+              <button class="add-to-order-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15" data-name="Paneer Tikka" data-price="249">
+                + Add
+              </button>
+              <button class="p-2 rounded-lg bg-[#C2410C] text-white hover:bg-[#9A3412]" data-dish-name="Paneer Tikka" data-dish-price="249" title="Order on WhatsApp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 3: Butter Chicken - ₹329 (Main Course) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex gap-4 items-center justify-between" data-category="main-course" data-is-veg="false" data-name="Butter Chicken" data-desc="Rich velvety butter makhani tomato curry with tender chicken">
+            <div class="flex items-center gap-3">
+              <span class="non-veg-indicator" title="Non-Vegetarian"></span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-heading text-base font-bold text-[#1C1917]">Butter Chicken</h4>
+                  <span class="text-[10px] px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-semibold">Chef's Signature</span>
+                </div>
+                <p class="text-xs text-[#57534E] line-clamp-1 mt-0.5">Our legendary 14-spice makhani gravy enriched with fresh cream and white butter.</p>
+                <p class="text-xs font-bold text-[#C2410C] mt-1.5">₹329</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0">
+              <button class="add-to-order-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15" data-name="Butter Chicken" data-price="329">
+                + Add
+              </button>
+              <button class="p-2 rounded-lg bg-[#C2410C] text-white hover:bg-[#9A3412]" data-dish-name="Butter Chicken" data-dish-price="329" title="Order on WhatsApp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 4: Dal Tadka - ₹189 (Main Course) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex gap-4 items-center justify-between" data-category="main-course" data-is-veg="true" data-name="Dal Tadka" data-desc="Yellow lentils tempered with ghee cumin garlic and red chillies">
+            <div class="flex items-center gap-3">
+              <span class="veg-indicator" title="Vegetarian"></span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-heading text-base font-bold text-[#1C1917]">Dal Tadka</h4>
+                  <span class="text-[10px] px-2 py-0.5 rounded bg-yellow-100 text-yellow-800 font-semibold">Comfort Food</span>
+                </div>
+                <p class="text-xs text-[#57534E] line-clamp-1 mt-0.5">Creamy yellow lentils tempered in sizzling desi ghee with whole cumin and garlic.</p>
+                <p class="text-xs font-bold text-[#C2410C] mt-1.5">₹189</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0">
+              <button class="add-to-order-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15" data-name="Dal Tadka" data-price="189">
+                + Add
+              </button>
+              <button class="p-2 rounded-lg bg-[#C2410C] text-white hover:bg-[#9A3412]" data-dish-name="Dal Tadka" data-dish-price="189" title="Order on WhatsApp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 5: Veg Biryani - ₹229 (Biryani) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex gap-4 items-center justify-between" data-category="biryani" data-is-veg="true" data-name="Veg Biryani" data-desc="Slow dum cooked fragrant saffron basmati rice with farm vegetables">
+            <div class="flex items-center gap-3">
+              <span class="veg-indicator" title="Vegetarian"></span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-heading text-base font-bold text-[#1C1917]">Veg Biryani</h4>
+                  <span class="text-[10px] px-2 py-0.5 rounded bg-purple-100 text-purple-800 font-semibold">Dum Pukht</span>
+                </div>
+                <p class="text-xs text-[#57534E] line-clamp-1 mt-0.5">Clay handi dum cooked basmati rice with kewra water, mint, cashews and raita.</p>
+                <p class="text-xs font-bold text-[#C2410C] mt-1.5">₹229</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0">
+              <button class="add-to-order-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15" data-name="Veg Biryani" data-price="229">
+                + Add
+              </button>
+              <button class="p-2 rounded-lg bg-[#C2410C] text-white hover:bg-[#9A3412]" data-dish-name="Veg Biryani" data-dish-price="229" title="Order on WhatsApp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 6: Garlic Naan - ₹69 (Breads) -->
+          <div class="menu-card-item bg-white p-5 rounded-2xl border border-[#E7E5E4] card-hover flex gap-4 items-center justify-between" data-category="breads" data-is-veg="true" data-name="Garlic Naan" data-desc="Tandoori flatbread topped with minced garlic and butter">
+            <div class="flex items-center gap-3">
+              <span class="veg-indicator" title="Vegetarian"></span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-heading text-base font-bold text-[#1C1917]">Garlic Naan</h4>
+                  <span class="text-[10px] px-2 py-0.5 rounded bg-stone-100 text-stone-700 font-semibold">Tandoor Fresh</span>
+                </div>
+                <p class="text-xs text-[#57534E] line-clamp-1 mt-0.5">Soft leavened bread slathered with melted butter, roasted garlic, and coriander.</p>
+                <p class="text-xs font-bold text-[#C2410C] mt-1.5">₹69</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0">
+              <button class="add-to-order-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[#D4A017] hover:bg-[#D4A017]/15" data-name="Garlic Naan" data-price="69">
+                + Add
+              </button>
+              <button class="p-2 rounded-lg bg-[#C2410C] text-white hover:bg-[#9A3412]" data-dish-name="Garlic Naan" data-dish-price="69" title="Order on WhatsApp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Full Menu CTA -->
+        <div class="mt-12 text-center">
+          <a href="menu.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-semibold text-white bg-[#C2410C] hover:bg-[#9A3412] shadow-md hover:shadow-lg transition-all">
+            <span>View Full Restaurant Menu (40+ Dishes)</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: Customer Testimonials -->
+    <section class="py-16 sm:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="inline-block px-3 py-1 rounded-full badge-gold text-xs font-semibold uppercase tracking-wider mb-2">
+            Loved By Pune Foodies
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917]">
+            Customer Testimonials
+          </h2>
+          <div class="ornament-divider">
+            <i data-lucide="star" class="w-4 h-4 text-[#D4A017]"></i>
+          </div>
+          <p class="text-[#57534E] text-sm sm:text-base">
+            See why families, couples, and food connoisseurs across Pune love dining with us.
+          </p>
+        </div>
+
+        <!-- Testimonial Cards Grid (Sample reviews clearly structured for easy replacement) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="bg-[#FFF8F0] p-7 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-500">
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                </div>
+                <span class="text-[11px] text-[#57534E] bg-white px-2 py-0.5 rounded border border-[#E7E5E4]">
+                  Google Review
+                </span>
+              </div>
+              <p class="text-sm text-[#1C1917] italic leading-relaxed">
+                "Hands down the best Butter Chicken in Pune! The gravy is velvety, perfectly spiced without being overly sweet, and the Garlic Naan was hot and crispy. The ambiance is elegant and welcoming."
+              </p>
+            </div>
+            <div class="pt-5 mt-4 border-t border-[#E7E5E4] flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#C2410C] to-[#D4A017] flex items-center justify-center text-white font-bold text-sm">
+                AK
+              </div>
+              <div>
+                <p class="text-sm font-bold text-[#1C1917]">Aditya Kulkarni</p>
+                <p class="text-xs text-[#57534E]">Kalyani Nagar, Pune</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-[#FFF8F0] p-7 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-500">
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                </div>
+                <span class="text-[11px] text-[#57534E] bg-white px-2 py-0.5 rounded border border-[#E7E5E4]">
+                  Zomato Gold Member
+                </span>
+              </div>
+              <p class="text-sm text-[#1C1917] italic leading-relaxed">
+                "Ordered the Dum Veg Biryani and Paneer Tikka for our family anniversary dinner. The aroma of saffron and fresh spices was heavenly. Also loved their prompt WhatsApp order service!"
+              </p>
+            </div>
+            <div class="pt-5 mt-4 border-t border-[#E7E5E4] flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#1C1917] to-[#57534E] flex items-center justify-center text-white font-bold text-sm">
+                PD
+              </div>
+              <div>
+                <p class="text-sm font-bold text-[#1C1917]">Pooja Deshmukh</p>
+                <p class="text-xs text-[#57534E]">Koregaon Park, Pune</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-[#FFF8F0] p-7 rounded-2xl border border-[#E7E5E4] card-hover flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-500">
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                </div>
+                <span class="text-[11px] text-[#57534E] bg-white px-2 py-0.5 rounded border border-[#E7E5E4]">
+                  Local Food Critic
+                </span>
+              </div>
+              <p class="text-sm text-[#1C1917] italic leading-relaxed">
+                "The Dal Tadka has that authentic charcoal smoky aroma you rarely find in upscale modern restaurants. Courteous staff, cozy warm lighting, and impeccable culinary consistency."
+              </p>
+            </div>
+            <div class="pt-5 mt-4 border-t border-[#E7E5E4] flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#D4A017] to-[#B45309] flex items-center justify-center text-white font-bold text-sm">
+                RM
+              </div>
+              <div>
+                <p class="text-sm font-bold text-[#1C1917]">Rahul Mehta</p>
+                <p class="text-xs text-[#57534E]">Viman Nagar, Pune</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 8: Food/Gallery Section (6 Images Required) -->
+    <section class="py-16 sm:py-20 bg-[#FFF8F0]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="inline-block px-3 py-1 rounded-full badge-orange text-xs font-semibold uppercase tracking-wider mb-2">
+            Visual Feasts
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917]">
+            Food & Ambiance Gallery
+          </h2>
+          <div class="ornament-divider">
+            <i data-lucide="camera" class="w-4 h-4 text-[#D4A017]"></i>
+          </div>
+          <p class="text-[#57534E] text-sm sm:text-base">
+            Glimpses into our kitchen creations and restaurant warmth. Tag us at <strong class="text-[#C2410C]">@theurbantadka.pune</strong>
+          </p>
+        </div>
+
+        <!-- 6 Responsive Gallery Cards with Click-to-Zoom Lightbox -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+          
+          <!-- Gallery 1: Crispy Masala Dosa -->
+          <div class="gallery-card group relative h-56 sm:h-72 rounded-2xl overflow-hidden cursor-pointer shadow-md bg-stone-900" data-caption="Signature Crispy Masala Dosa with Sambar & Fresh Chutneys">
+            <img 
+              src="images/gallery/gallery-1.jpg" 
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=80';"
+              alt="Crispy Masala Dosa with sambar and chutneys" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-95 group-hover:opacity-100"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+              <span class="text-xs text-[#D4A017] font-semibold">South Indian Delight</span>
+              <p class="font-heading text-sm sm:text-base font-bold">Crispy Masala Dosa</p>
+            </div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="maximize-2" class="w-4 h-4"></i>
+            </div>
+          </div>
+
+          <!-- Gallery 2: Dal Tadka -->
+          <div class="gallery-card group relative h-56 sm:h-72 rounded-2xl overflow-hidden cursor-pointer shadow-md bg-stone-900" data-caption="Golden Yellow Dal Tadka with Sizzling Ghee Garlic Tempering">
+            <img 
+              src="images/gallery/gallery-2.jpg" 
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80';"
+              alt="Authentic Dal Tadka in brass handi" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-95 group-hover:opacity-100"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+              <span class="text-xs text-[#D4A017] font-semibold">Pure Ghee Tempering</span>
+              <p class="font-heading text-sm sm:text-base font-bold">Signature Dal Tadka</p>
+            </div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="maximize-2" class="w-4 h-4"></i>
+            </div>
+          </div>
+
+          <!-- Gallery 3: Hot Tandoori Garlic Naan -->
+          <div class="gallery-card group relative h-56 sm:h-72 rounded-2xl overflow-hidden cursor-pointer shadow-md bg-stone-900" data-caption="Hot Clay-Oven Garlic Naan with Melted Butter & Fresh Cilantro">
+            <img 
+              src="images/gallery/gallery-3.jpg" 
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80';"
+              alt="Hot Tandoori Garlic Naan fresh from clay tandoor" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-95 group-hover:opacity-100"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+              <span class="text-xs text-[#D4A017] font-semibold">Clay Oven Fresh</span>
+              <p class="font-heading text-sm sm:text-base font-bold">Butter Garlic Naan</p>
+            </div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="maximize-2" class="w-4 h-4"></i>
+            </div>
+          </div>
+
+          <!-- Gallery 4: Chicken Tikka / Kebabs -->
+          <div class="gallery-card group relative h-56 sm:h-72 rounded-2xl overflow-hidden cursor-pointer shadow-md bg-stone-900" data-caption="Smoky Char-Grilled Chicken Tikka Skewers on Sizzler Plate">
+            <img 
+              src="images/gallery/gallery-4.jpg" 
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80';"
+              alt="Spiced smoky chicken tikka skewers" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-95 group-hover:opacity-100"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+              <span class="text-xs text-[#D4A017] font-semibold">Tandoor Special</span>
+              <p class="font-heading text-sm sm:text-base font-bold">Royal Chicken Tikka</p>
+            </div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="maximize-2" class="w-4 h-4"></i>
+            </div>
+          </div>
+
+          <!-- Gallery 5: Gulab Jamun Dessert -->
+          <div class="gallery-card group relative h-56 sm:h-72 rounded-2xl overflow-hidden cursor-pointer shadow-md bg-stone-900" data-caption="Warm Shahi Gulab Jamun in Cardamom Saffron Syrup with Pistachios">
+            <img 
+              src="images/gallery/gallery-5.jpg" 
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1605197143431-739c915f4e3c?auto=format&fit=crop&w=800&q=80';"
+              alt="Warm Gulab Jamun dessert in saffron syrup" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-95 group-hover:opacity-100"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+              <span class="text-xs text-[#D4A017] font-semibold">Sweet Endings</span>
+              <p class="font-heading text-sm sm:text-base font-bold">Shahi Gulab Jamun</p>
+            </div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="maximize-2" class="w-4 h-4"></i>
+            </div>
+          </div>
+
+          <!-- Gallery 6: Mango Lassi / Beverages -->
+          <div class="gallery-card group relative h-56 sm:h-72 rounded-2xl overflow-hidden cursor-pointer shadow-md bg-stone-900" data-caption="Chilled Alphonso Mango Lassi Garnished with Saffron & Crushed Almonds">
+            <img 
+              src="images/gallery/gallery-6.jpg" 
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=800&q=80';"
+              alt="Chilled creamy mango lassi beverage" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-95 group-hover:opacity-100"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+              <span class="text-xs text-[#D4A017] font-semibold">Artisanal Drinks</span>
+              <p class="font-heading text-sm sm:text-base font-bold">Royal Mango Lassi</p>
+            </div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="maximize-2" class="w-4 h-4"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 9: Location and Opening Hours -->
+    <section class="py-16 sm:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Information Column -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="inline-block px-3 py-1 rounded-full badge-gold text-xs font-semibold uppercase tracking-wider">
+              Visit Us in Pune
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-[#1C1917]">
+              Location & Opening Hours
+            </h2>
+            <p class="text-sm sm:text-base text-[#57534E]">
+              We are conveniently located in Koregaon Park with ample valet parking, serene ambiance, and private family booths.
+            </p>
+
+            <!-- Cards -->
+            <div class="space-y-4 pt-2">
+              
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-[#FFF8F0] border border-[#E7E5E4]">
+                <div class="w-10 h-10 rounded-lg bg-[#C2410C]/10 text-[#C2410C] flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-[#1C1917]">Restaurant Address</h4>
+                  <p class="text-xs sm:text-sm text-[#57534E] mt-0.5">
+                    Lane 7, Koregaon Park, Near North Main Road, Pune, Maharashtra 411001
+                  </p>
+                  <a href="https://maps.google.com/?q=Koregaon+Park+Pune" target="_blank" class="inline-flex items-center gap-1 text-xs text-[#C2410C] font-semibold mt-1 hover:underline">
+                    <span>Open in Google Maps</span>
+                    <i data-lucide="external-link" class="w-3 h-3"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-[#FFF8F0] border border-[#E7E5E4]">
+                <div class="w-10 h-10 rounded-lg bg-[#D4A017]/10 text-[#D4A017] flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-[#1C1917]">Opening Hours</h4>
+                  <p class="text-xs sm:text-sm text-[#57534E] mt-0.5">
+                    Monday to Sunday: <strong>11:00 AM – 11:00 PM</strong> (Kitchen closes at 10:45 PM)
+                  </p>
+                  <p class="text-xs text-green-700 font-medium mt-1">Open 365 Days a Year</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-[#FFF8F0] border border-[#E7E5E4]">
+                <div class="w-10 h-10 rounded-lg bg-green-100 text-green-700 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="phone-call" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-[#1C1917]">Reservations & Takeaway</h4>
+                  <p class="text-xs sm:text-sm text-[#57534E] mt-0.5">
+                    Phone: <a href="tel:+919876543210" class="font-semibold text-[#1C1917] hover:text-[#C2410C]">+91 98765 43210</a>
+                  </p>
+                  <p class="text-xs sm:text-sm text-[#57534E]">
+                    WhatsApp: <a href="https://wa.me/919876543210" target="_blank" class="font-semibold text-green-700 hover:underline">+91 98765 43210</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Google Maps Embed Placeholder -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-2xl overflow-hidden border border-[#E7E5E4] shadow-lg bg-stone-100 h-[380px]">
+              <iframe 
+                title="The Urban Tadka Google Maps Location Pune"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15131.606399120616!2d73.88603415!3d18.5362145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0f6f4d2f6f1%3A0x6a2c20689e47d1b3!2sKoregaon%20Park%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                class="w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow text-xs font-semibold text-[#1C1917] flex items-center gap-1.5 pointer-events-none">
+                <i data-lucide="navigation" class="w-3.5 h-3.5 text-[#C2410C]"></i>
+                <span>The Urban Tadka, Koregaon Park</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 10: Strong Final CTA -->
+    <section class="py-16 sm:py-20 bg-dark-jalis text-white relative overflow-hidden">
+      <!-- Ambient Radial Glow -->
+      <div class="absolute inset-0 bg-radial-gradient pointer-events-none opacity-40"></div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+        
+        <span class="inline-block px-3.5 py-1 rounded-full bg-[#D4A017]/20 text-[#D4A017] border border-[#D4A017]/40 text-xs font-semibold uppercase tracking-wider">
+          Experience Culinary Excellence
+        </span>
+
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+          Ready for a Royal Dining Experience?
+        </h2>
+
+        <p class="text-sm sm:text-base text-[#E7E5E4] max-w-2xl mx-auto leading-relaxed">
+          Whether you are planning a relaxed family dinner, an intimate date night, or craving hot butter chicken delivered to your doorstep — we are here to serve you.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20place%20an%20order%20from%20The%20Urban%20Tadka." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold text-white bg-[#C2410C] hover:bg-[#9A3412] shadow-lg shadow-[#C2410C]/40 hover:shadow-xl transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-5 h-5 text-white"></i>
+            <span>Order on WhatsApp</span>
+          </a>
+          <a href="contact.html" class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold text-white bg-transparent border-2 border-[#D4A017] hover:bg-[#D4A017]/20 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="calendar" class="w-5 h-5 text-[#D4A017]"></i>
+            <span>Book a Table Online</span>
+          </a>
+        </div>
+
+        <p class="text-xs text-[#E7E5E4]/60 pt-2">
+          Call directly: <a href="tel:+919876543210" class="text-[#D4A017] hover:underline">+91 98765 43210</a> • Fast response guaranteed
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- SECTION 11: Footer -->
+  <footer class="bg-[#1C1917] text-[#E7E5E4] pt-16 pb-10 border-t border-[#D4A017]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#C2410C] to-[#9A3412] flex items-center justify-center text-white">
+              <i data-lucide="flame" class="w-5 h-5 text-[#D4A017]"></i>
+            </div>
+            <span class="font-heading text-xl font-bold text-white tracking-tight">
+              THE URBAN <span class="text-[#C2410C]">TADKA</span>
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-400 max-w-sm leading-relaxed">
+            Authentic Indian culinary heritage crafted with precision, fresh ingredients, and genuine warmth in Pune, Maharashtra.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-stone-800 hover:bg-[#C2410C] text-stone-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="w-9 h-9 rounded-full bg-stone-800 hover:bg-[#C2410C] text-stone-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Facebook">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" class="w-9 h-9 rounded-full bg-stone-800 hover:bg-green-600 text-stone-300 hover:text-white flex items-center justify-center transition-colors" aria-label="WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+            <a href="tel:+919876543210" class="w-9 h-9 rounded-full bg-stone-800 hover:bg-[#D4A017] text-stone-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Phone">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase tracking-widest text-[#D4A017] font-semibold">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-stone-400">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="menu.html" class="hover:text-white transition-colors">Complete Menu</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Our Kitchen</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact & Location</a></li>
+            <li><a href="contact.html#reservation" class="hover:text-white transition-colors">Book a Table</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Categories -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase tracking-widest text-[#D4A017] font-semibold">Our Specialities</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-stone-400">
+            <li><a href="menu.html" class="hover:text-white transition-colors">Tandoori Starters</a></li>
+            <li><a href="menu.html" class="hover:text-white transition-colors">Rich Mughlai Curries</a></li>
+            <li><a href="menu.html" class="hover:text-white transition-colors">Dum Biryani Pots</a></li>
+            <li><a href="menu.html" class="hover:text-white transition-colors">Artisanal Breads</a></li>
+            <li><a href="menu.html" class="hover:text-white transition-colors">Desserts & Lassis</a></li>
+          </ul>
+        </div>
+
+        <!-- Timings & Address -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase tracking-widest text-[#D4A017] font-semibold">Hours & Location</h4>
+          <div class="text-xs sm:text-sm text-stone-400 space-y-2">
+            <p><strong>Open Daily:</strong><br>11:00 AM – 11:00 PM</p>
+            <p><strong>Address:</strong><br>Lane 7, Koregaon Park, Pune, MH 411001</p>
+            <p><strong>Direct Line:</strong><br><a href="tel:+919876543210" class="text-[#D4A017] hover:underline">+91 98765 43210</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-400">
+        <p>© 2026 The Urban Tadka. All Rights Reserved. Crafted with passion in Pune.</p>
+        <p class="text-stone-400">
+          Demo Restaurant Portfolio Website • Ready for Commercial Deployment
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (Visible on every page) -->
+  <a 
+    id="floating-whatsapp-btn"
+    href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20menu." 
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform whatsapp-pulse focus:outline-none"
+    aria-label="Chat on WhatsApp"
+  >
+    <i data-lucide="message-circle" class="w-8 h-8 fill-white text-[#25D366]"></i>
+    <span class="sr-only">Order or enquire on WhatsApp</span>
+  </a>
+
+  <!-- Lightbox Modal for Gallery Images -->
+  <div id="gallery-lightbox" class="fixed inset-0 z-50 bg-black/90 hidden backdrop-blur-md flex items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full text-center">
+      <button id="close-lightbox-btn" class="absolute -top-12 right-0 p-2 text-white hover:text-[#D4A017] focus:outline-none" aria-label="Close Lightbox">
+        <i data-lucide="x" class="w-8 h-8"></i>
+      </button>
+      <img id="lightbox-img" src="" alt="Gallery Preview" class="max-h-[80vh] w-auto mx-auto rounded-xl shadow-2xl object-contain">
+      <p id="lightbox-caption" class="text-white mt-4 font-heading text-lg font-semibold"></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
